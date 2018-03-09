@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./dist/sampleObservable.js"
+    "start": "nodemon ./dist/sampleObservable.js",
+    "createObserver": "nodemon ./dist/createObserver.js"
   },
   "keywords": [],
   "author": "",
