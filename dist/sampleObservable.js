@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //This is a sample of using a cold observable
 const Observable_1 = require("rxjs/Observable");
 require("rxjs/add/observable/of");
+const colors = require("colors");
 Observable_1.Observable.of(2, 3, 4, 5, 6, 7, 8, 9).subscribe((x) => {
     //let us delay the code
     setTimeout(() => {
@@ -23,4 +24,4 @@ const rx = Observable_1.Observable.create((observer) => {
 rx.subscribe((x) => {
     console.log(`Your value is: ${x}`);
 });
-console.log('Observable process started!');
+console.log(colors.magenta('Observable process started!'));

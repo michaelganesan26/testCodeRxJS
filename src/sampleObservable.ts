@@ -1,6 +1,7 @@
 //This is a sample of using a cold observable
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
+import * as colors from 'colors';
 
 
 Observable.of(2,3,4,5,6,7,8,9).subscribe((x)=>{
@@ -33,5 +34,5 @@ rx.subscribe((x) => {
 
 });
 
-console.log('Observable process started!');
+console.log(colors.magenta('Observable process started!'));
 
