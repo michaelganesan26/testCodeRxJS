@@ -20,11 +20,11 @@ const observable = Observable.create((observer:any) =>{
 observable.subscribe((x:any)=>{
      console.log(x);
 
-},(error)=>{
+},(error:any)=>{
   console.log(`An error has occured with the stream ${error}`);
 },
 ()=>{
-   console.log(colors.yellow("Process completed"));
+   console.log(colors.magenta("Process completed"));
 
 });
 

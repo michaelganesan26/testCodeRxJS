@@ -18,5 +18,5 @@ observable.subscribe((x) => {
 }, (error) => {
     console.log(`An error has occured with the stream ${error}`);
 }, () => {
-    console.log(colors.yellow("Process completed"));
+    console.log(colors.magenta("Process completed"));
 });
